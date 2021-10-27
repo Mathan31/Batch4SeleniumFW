@@ -11,20 +11,33 @@ public class LoginPage extends BaseClass{
 	private By oSignIn = By.xpath("//button[text()='Sign In']");
 	private By oRegister = By.xpath("//*[text()='Register For Account']");
 	
-	public void typeUserName(String sUserName) {
+	public boolean verifyElements() {
+		if(driver.findElement(oUsername).isDisplayed() && driver.findElement(oPassword).isDisplayed()
+				&& driver.findElement(oSignIn).isDisplayed()&& driver.findElement(oRegister).isDisplayed()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public LoginPage typeUserName(String sUserName) {
 		driver.findElement(oUsername).sendKeys(sUserName);
+		return this;
 	}
 	
-	public void typePassword(String sPassword) {
+	public LoginPage typePassword(String sPassword) {
 		driver.findElement(oPassword).sendKeys(sPassword);
+		return this;
 	}
 	
-	public void clickSignIn() {
+	public HomePage clickSignIn() {
 		driver.findElement(oSignIn).click();
+		return new HomePage();
 	}
 	
-	public void clickSignIn_InvalidDetails() {
-		
+	public LoginPage clickSignIn_InvalidDetails() {
+		driver.findElement(oSignIn).click();
+		return this;
 	}
 	
 
