@@ -40,5 +40,10 @@ public class LoginPage extends BaseClass{
 		return this;
 	}
 	
+	public RegistrationPage clickRegisterLink() {
+		driver.findElement(oRegister).click();
+		return new RegistrationPage();
+	}
+	
 
 }
