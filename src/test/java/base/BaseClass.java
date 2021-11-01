@@ -8,14 +8,19 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.ExcelReader;
+import utilities.PropertiesReader;
 
 public class BaseClass {
 	
 	public static WebDriver driver;
 	public int iBrowserType = 1; // 1-Chrome,2-FF,3-Edge,4-IE
-	public String sURL = "https://uibank.uipath.com/";
+	public String fileName = "Environment_Details";
+	public String sURL = PropertiesReader.getPropertyValue(fileName, "production");
+	public String sSheetName = "";
 	@BeforeClass
 	public void browserInvoke() {
 
@@ -54,6 +59,12 @@ public class BaseClass {
 	@AfterClass
 	public void closeBrowser() {
 		driver.quit();
+	}
+	
+	@DataProvider(name="ExcelData")
+	public Object[][] getExcelValue(){
+		Object[][] data = ExcelReader.getSheet(sSheetName);
+		return data;
 	}
 
 }
