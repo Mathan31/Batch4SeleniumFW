@@ -17,13 +17,13 @@ public class TC001_Login extends BaseClass{
 	
   @Test(priority = 1)
   public void loginFieldValidation() {
-	  boolean result = new LoginPage().verifyElements();
+	  boolean result = new LoginPage(driver).verifyElements();
 	  Assert.assertTrue(result);
   }
   
   @Test(priority = 2,dataProvider = "ExcelData")
   public void loginWithValidCredential(String sUName,String sPW) {
-	  new LoginPage()
+	  new LoginPage(driver)
 	  .typeUserName(sUName)
 	  .typePassword(sPW)
 	  .clickSignIn()
@@ -33,8 +33,8 @@ public class TC001_Login extends BaseClass{
   
   @Test(priority = 3)
   public void loginWithInValidCredential() {
-	  boolean result = new LoginPage()
-	  .typePassword("Mathan123")
+	  boolean result = new LoginPage(driver)
+	  .typeUserName("Mathan123")
 	  .typePassword("testing")
 	  .clickSignIn_InvalidDetails()
 	  .verifyElements();

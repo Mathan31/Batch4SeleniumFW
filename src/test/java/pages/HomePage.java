@@ -1,12 +1,18 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import base.BaseClass;
 
 public class HomePage extends BaseClass{
 	private By oWelcome = By.xpath("//h3[contains(text(),' Welcome!')]");
 	private By oLogout = By.xpath("//a[text()='Logout']");
+	private WebDriver driver;
+	
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	public HomePage verifyHomePage() {
 		boolean result = driver.findElement(oWelcome).isDisplayed();
@@ -21,7 +27,7 @@ public class HomePage extends BaseClass{
 	public LoginPage clickLogout() {
 		//driver.findElement(oLogout).click();
 		driver.findElement(oLogout).click();
-		return new LoginPage();
+		return new LoginPage(driver);
 	}
 
 }

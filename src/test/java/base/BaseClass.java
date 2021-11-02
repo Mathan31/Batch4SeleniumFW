@@ -16,7 +16,7 @@ import utilities.PropertiesReader;
 
 public class BaseClass {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	public int iBrowserType = 1; // 1-Chrome,2-FF,3-Edge,4-IE
 	public String fileName = "Environment_Details";
 	public String sURL = PropertiesReader.getPropertyValue(fileName, "production");

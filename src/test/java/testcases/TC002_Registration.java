@@ -20,15 +20,15 @@ public class TC002_Registration extends BaseClass{
 	
   @Test(priority = 1)
   public void registrationFieldValidation() {
-	  boolean result = new LoginPage()
+	  boolean result = new LoginPage(driver)
 			  			.clickRegisterLink().verifyElements();
 	  Assert.assertTrue(result);
-	  new RegistrationPage().clickOnLogin();
+	  new RegistrationPage(driver).clickOnLogin();
 	 }
   
   @Test(priority = 2,dataProvider = "ExcelData")
   public void regiterWithMandatoryFields(String fName,String lName,String uName,String email,String password) {
-	  new LoginPage()
+	  new LoginPage(driver)
 	      .clickRegisterLink()
 	      .enter_the_first_name(fName)
 	      .select_the_title()
