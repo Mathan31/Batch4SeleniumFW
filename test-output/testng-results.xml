@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="2" total="11" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="UIBankSuite" duration-ms="36390" started-at="2021-11-02T09:18:04 IST" finished-at="2021-11-02T09:18:41 IST">
+  <suite name="UIBankSuite" duration-ms="48217" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:20:07 IST">
     <groups>
     </groups>
-    <test name="UIBankTest" duration-ms="36390" started-at="2021-11-02T09:18:04 IST" finished-at="2021-11-02T09:18:41 IST">
+    <test name="UIBankTest" duration-ms="48217" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:20:07 IST">
       <class name="testcases.TC001_Login">
-        <test-method status="PASS" signature="setUpTestCase()[pri:0, instance:testcases.TC001_Login@77846d2c]" name="setUpTestCase" is-config="true" duration-ms="26" started-at="2021-11-02T09:18:04 IST" finished-at="2021-11-02T09:18:04 IST">
+        <test-method status="PASS" signature="initReport()[pri:0, instance:testcases.TC001_Login@5fdba6f9]" name="initReport" is-config="true" duration-ms="450" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:19:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="setUpTestCase()[pri:0, instance:testcases.TC001_Login@5fdba6f9]" name="setUpTestCase" is-config="true" duration-ms="0" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:19:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTestCase -->
-        <test-method status="PASS" signature="browserInvoke()[pri:0, instance:testcases.TC001_Login@77846d2c]" name="browserInvoke" is-config="true" duration-ms="18580" started-at="2021-11-02T09:18:04 IST" finished-at="2021-11-02T09:18:23 IST">
+        <test-method status="PASS" signature="browserInvoke()[pri:0, instance:testcases.TC001_Login@5fdba6f9]" name="browserInvoke" is-config="true" duration-ms="16393" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:19:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInvoke -->
-        <test-method status="PASS" signature="loginFieldValidation()[pri:1, instance:testcases.TC001_Login@77846d2c]" name="loginFieldValidation" duration-ms="694" started-at="2021-11-02T09:18:23 IST" finished-at="2021-11-02T09:18:24 IST">
+        <test-method status="PASS" signature="loginFieldValidation()[pri:1, instance:testcases.TC001_Login@5fdba6f9]" name="loginFieldValidation" duration-ms="3264" started-at="2021-11-05T10:19:36 IST" finished-at="2021-11-05T10:19:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFieldValidation -->
-        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testcases.TC001_Login@77846d2c]" name="loginWithValidCredential" duration-ms="5775" started-at="2021-11-02T09:18:26 IST" data-provider="ExcelData" finished-at="2021-11-02T09:18:32 IST">
+        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testcases.TC001_Login@5fdba6f9]" name="loginWithValidCredential" duration-ms="6404" started-at="2021-11-05T10:19:41 IST" data-provider="ExcelData" finished-at="2021-11-05T10:19:47 IST">
           <params>
             <param index="0">
               <value>
@@ -35,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testcases.TC001_Login@77846d2c]" name="loginWithValidCredential" duration-ms="1881" started-at="2021-11-02T09:18:32 IST" data-provider="ExcelData" finished-at="2021-11-02T09:18:34 IST">
+        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testcases.TC001_Login@5fdba6f9]" name="loginWithValidCredential" duration-ms="4279" started-at="2021-11-05T10:19:47 IST" data-provider="ExcelData" finished-at="2021-11-05T10:19:51 IST">
           <params>
             <param index="0">
               <value>
@@ -51,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testcases.TC001_Login@77846d2c]" name="loginWithValidCredential" duration-ms="1760" started-at="2021-11-02T09:18:34 IST" data-provider="ExcelData" finished-at="2021-11-02T09:18:36 IST">
+        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testcases.TC001_Login@5fdba6f9]" name="loginWithValidCredential" duration-ms="3155" started-at="2021-11-05T10:19:51 IST" data-provider="ExcelData" finished-at="2021-11-05T10:19:54 IST">
           <params>
             <param index="0">
               <value>
@@ -67,29 +71,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-        <test-method status="PASS" signature="loginWithInValidCredential()[pri:3, instance:testcases.TC001_Login@77846d2c]" name="loginWithInValidCredential" duration-ms="1126" started-at="2021-11-02T09:18:36 IST" finished-at="2021-11-02T09:18:37 IST">
+        <test-method status="PASS" signature="loginWithInValidCredential()[pri:3, instance:testcases.TC001_Login@5fdba6f9]" name="loginWithInValidCredential" duration-ms="4832" started-at="2021-11-05T10:19:54 IST" finished-at="2021-11-05T10:19:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidCredential -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC001_Login@77846d2c]" name="closeBrowser" is-config="true" duration-ms="3692" started-at="2021-11-02T09:18:37 IST" finished-at="2021-11-02T09:18:41 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC001_Login@5fdba6f9]" name="closeBrowser" is-config="true" duration-ms="1344" started-at="2021-11-05T10:19:59 IST" finished-at="2021-11-05T10:20:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:testcases.TC001_Login@5fdba6f9]" name="flushReport" is-config="true" duration-ms="1340" started-at="2021-11-05T10:20:08 IST" finished-at="2021-11-05T10:20:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
       </class> <!-- testcases.TC001_Login -->
       <class name="testcases.TC002_Registration">
-        <test-method status="PASS" signature="setUpTestCase()[pri:0, instance:testcases.TC002_Registration@24a35978]" name="setUpTestCase" is-config="true" duration-ms="1" started-at="2021-11-02T09:18:04 IST" finished-at="2021-11-02T09:18:04 IST">
+        <test-method status="PASS" signature="setUpTestCase()[pri:0, instance:testcases.TC002_Registration@3b94d659]" name="setUpTestCase" is-config="true" duration-ms="8" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:19:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTestCase -->
-        <test-method status="PASS" signature="browserInvoke()[pri:0, instance:testcases.TC002_Registration@24a35978]" name="browserInvoke" is-config="true" duration-ms="17119" started-at="2021-11-02T09:18:04 IST" finished-at="2021-11-02T09:18:22 IST">
+        <test-method status="PASS" signature="browserInvoke()[pri:0, instance:testcases.TC002_Registration@3b94d659]" name="browserInvoke" is-config="true" duration-ms="16396" started-at="2021-11-05T10:19:19 IST" finished-at="2021-11-05T10:19:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInvoke -->
-        <test-method status="PASS" signature="registrationFieldValidation()[pri:1, instance:testcases.TC002_Registration@24a35978]" name="registrationFieldValidation" duration-ms="1793" started-at="2021-11-02T09:18:22 IST" finished-at="2021-11-02T09:18:23 IST">
+        <test-method status="PASS" signature="registrationFieldValidation()[pri:1, instance:testcases.TC002_Registration@3b94d659]" name="registrationFieldValidation" duration-ms="3919" started-at="2021-11-05T10:19:36 IST" finished-at="2021-11-05T10:19:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationFieldValidation -->
-        <test-method status="PASS" signature="regiterWithMandatoryFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.TC002_Registration@24a35978]" name="regiterWithMandatoryFields" duration-ms="5705" started-at="2021-11-02T09:18:26 IST" data-provider="ExcelData" finished-at="2021-11-02T09:18:32 IST">
+        <test-method status="PASS" signature="regiterWithMandatoryFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.TC002_Registration@3b94d659]" name="regiterWithMandatoryFields" duration-ms="11798" started-at="2021-11-05T10:19:41 IST" data-provider="ExcelData" finished-at="2021-11-05T10:19:52 IST">
           <params>
             <param index="0">
               <value>
@@ -120,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regiterWithMandatoryFields -->
-        <test-method status="PASS" signature="regiterWithMandatoryFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.TC002_Registration@24a35978]" name="regiterWithMandatoryFields" duration-ms="4574" started-at="2021-11-02T09:18:32 IST" data-provider="ExcelData" finished-at="2021-11-02T09:18:37 IST">
+        <test-method status="PASS" signature="regiterWithMandatoryFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.TC002_Registration@3b94d659]" name="regiterWithMandatoryFields" duration-ms="4693" started-at="2021-11-05T10:19:52 IST" data-provider="ExcelData" finished-at="2021-11-05T10:19:57 IST">
           <params>
             <param index="0">
               <value>
@@ -151,7 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regiterWithMandatoryFields -->
-        <test-method status="PASS" signature="regiterWithMandatoryFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.TC002_Registration@24a35978]" name="regiterWithMandatoryFields" duration-ms="2431" started-at="2021-11-02T09:18:37 IST" data-provider="ExcelData" finished-at="2021-11-02T09:18:39 IST">
+        <test-method status="PASS" signature="regiterWithMandatoryFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testcases.TC002_Registration@3b94d659]" name="regiterWithMandatoryFields" duration-ms="9355" started-at="2021-11-05T10:19:57 IST" data-provider="ExcelData" finished-at="2021-11-05T10:20:06 IST">
           <params>
             <param index="0">
               <value>
@@ -182,7 +190,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regiterWithMandatoryFields -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC002_Registration@24a35978]" name="closeBrowser" is-config="true" duration-ms="1545" started-at="2021-11-02T09:18:39 IST" finished-at="2021-11-02T09:18:41 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC002_Registration@3b94d659]" name="closeBrowser" is-config="true" duration-ms="1057" started-at="2021-11-05T10:20:06 IST" finished-at="2021-11-05T10:20:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

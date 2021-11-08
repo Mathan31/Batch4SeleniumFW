@@ -299,46 +299,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithValidCredential')
-data.setCell(0, 2, 'testcases.TC001_Login')
-data.setCell(0, 3, 5775);
+data.setCell(0, 1, 'regiterWithMandatoryFields')
+data.setCell(0, 2, 'testcases.TC002_Registration')
+data.setCell(0, 3, 11798);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'regiterWithMandatoryFields')
 data.setCell(1, 2, 'testcases.TC002_Registration')
-data.setCell(1, 3, 5705);
+data.setCell(1, 3, 9355);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'regiterWithMandatoryFields')
-data.setCell(2, 2, 'testcases.TC002_Registration')
-data.setCell(2, 3, 4574);
+data.setCell(2, 1, 'loginWithValidCredential')
+data.setCell(2, 2, 'testcases.TC001_Login')
+data.setCell(2, 3, 6404);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'regiterWithMandatoryFields')
-data.setCell(3, 2, 'testcases.TC002_Registration')
-data.setCell(3, 3, 2431);
+data.setCell(3, 1, 'loginWithInValidCredential')
+data.setCell(3, 2, 'testcases.TC001_Login')
+data.setCell(3, 3, 4832);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithValidCredential')
-data.setCell(4, 2, 'testcases.TC001_Login')
-data.setCell(4, 3, 1881);
+data.setCell(4, 1, 'regiterWithMandatoryFields')
+data.setCell(4, 2, 'testcases.TC002_Registration')
+data.setCell(4, 3, 4693);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'registrationFieldValidation')
-data.setCell(5, 2, 'testcases.TC002_Registration')
-data.setCell(5, 3, 1793);
+data.setCell(5, 1, 'loginWithValidCredential')
+data.setCell(5, 2, 'testcases.TC001_Login')
+data.setCell(5, 3, 4279);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginWithValidCredential')
-data.setCell(6, 2, 'testcases.TC001_Login')
-data.setCell(6, 3, 1760);
+data.setCell(6, 1, 'registrationFieldValidation')
+data.setCell(6, 2, 'testcases.TC002_Registration')
+data.setCell(6, 3, 3919);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithInValidCredential')
+data.setCell(7, 1, 'loginFieldValidation')
 data.setCell(7, 2, 'testcases.TC001_Login')
-data.setCell(7, 3, 1126);
+data.setCell(7, 3, 3264);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginFieldValidation')
+data.setCell(8, 1, 'loginWithValidCredential')
 data.setCell(8, 2, 'testcases.TC001_Login')
-data.setCell(8, 3, 694);
+data.setCell(8, 3, 3155);
 window.suiteTableData['UIBankSuite']= { tableData: data, tableDiv: 'times-div-UIBankSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-UIBankSuite">
               </div> <!-- times-div-UIBankSuite -->
             </div> <!-- times-div -->
@@ -353,9 +353,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-UIBankSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TC002_Registration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">initReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-UIBankSuite" class="panel">
@@ -365,93 +374,110 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setUpTestCase</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">466 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC002_Registration</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpTestCase</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">467 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">browserInvoke</span>
-                <span class="method-start">213 ms</span>
+                <span class="method-start">558 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">browserInvoke</span>
-                <span class="method-start">213 ms</span>
+                <span class="method-start">558 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC002_Registration</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">registrationFieldValidation</span>
-                <span class="method-start">17457 ms</span>
+                <span class="method-start">16990 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginFieldValidation</span>
-                <span class="method-start">18793 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredential(Mathan, Testing123)</span>
-                <span class="method-start">22069 ms</span>
+                <span class="method-start">16990 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC002_Registration</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">regiterWithMandatoryFields(Selvin, test, Credo, credo, test123)</span>
-                <span class="method-start">22069 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">regiterWithMandatoryFields(Mathi, test, Credo, credo, test123)</span>
-                <span class="method-start">27780 ms</span>
+                <span class="method-start">21755 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">loginWithValidCredential(Mathan, Testing123)</span>
+                <span class="method-start">21757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">loginWithValidCredential(test1, test1)</span>
-                <span class="method-start">27850 ms</span>
+                <span class="method-start">28165 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredential(mathivathana.mp, november1987)</span>
-                <span class="method-start">29737 ms</span>
+                <span class="method-start">32445 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC002_Registration</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">regiterWithMandatoryFields(Mathi, test, Credo, credo, test123)</span>
+                <span class="method-start">33556 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredential</span>
-                <span class="method-start">31502 ms</span>
+                <span class="method-start">35603 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC002_Registration</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">regiterWithMandatoryFields(Deepika, test, Credo, credo, test123)</span>
-                <span class="method-start">32358 ms</span>
+                <span class="method-start">38251 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">32632 ms</span>
+                <span class="method-start">40447 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC002_Registration</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">34798 ms</span>
+                <span class="method-start">47613 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC001_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">48736 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
